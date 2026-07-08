@@ -1,105 +1,131 @@
-/* Página */
-body {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
     margin: 0;
-    padding: 30px;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #74b9ff, #a29bfe);
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
-/* Contenedor principal */
-.contenedor-formulario {
-    max-width: 550px;
-    margin: auto;
-    padding: 30px;
-    background: #ffffff;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("../img/fondo.png") no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
-/* Título */
-h1 {
-    text-align: center;
-    color: #2d3436;
-    margin-bottom: 10px;
-}
-
-/* Subtítulos */
-.subtitulo {
-    text-align: center;
-    color: #636e72;
+.contenedor {
+    width: 420px;
+    background: transparent;
+    border: 2px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: black;
+    border-radius: 10px;
+    padding: 30px 40px;
     margin-bottom: 15px;
 }
 
-/* Formularios */
-form {
-    margin-bottom: 18px;
+.contenedor h1 {
+    font-size: 36px;
+    text-align: center;
 }
 
-/* Etiquetas */
-label {
-    display: block;
-    margin-bottom: 6px;
-    font-weight: bold;
-    color: #2d3436;
-}
-
-/* Texto opcional */
-span {
-    color: #636e72;
-    font-size: 0.85em;
-    font-weight: normal;
-}
-
-/* Entradas */
-input {
+.contenedor .input-box {
+    position: relative;
     width: 100%;
-    padding: 12px;
-    border: 2px solid #dfe6e9;
-    border-radius: 8px;
-    font-size: 15px;
-    box-sizing: border-box;
-    transition: 0.3s;
+    height: 50px;
+    margin: 9px;
 }
 
-/* Cuando el usuario selecciona un campo */
-input:focus {
-    border-color: #6c5ce7;
-    box-shadow: 0 0 8px rgba(108, 92, 231, 0.3);
-    outline: none;
+.contenedor p {
+    color: red;
+    font-size: 13px;
+    min-height: 16px;
+    margin: 4px 0 0 15px;
 }
 
-/* Placeholder */
-input::placeholder {
-    color: #b2bec3;
-}
-
-/* Botón */
-button {
+.input-box input {
     width: 100%;
-    padding: 14px;
-    margin-top: 15px;
+    height: 100%;
+    background: transparent;
     border: none;
-    border-radius: 8px;
-    background: #6c5ce7;
-    color: white;
+    outline: none;
+    border: 2px solid #ccc;
+    border-radius: 40px;
     font-size: 16px;
-    font-weight: bold;
+    color: black;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+    color: darkgrey;
+    opacity: 1;
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.contenedor .recuerdame {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: 10px 0 15px;
+}
+
+.recuerdame label input {
+    accent-color: black;
+    margin-right: 3px;
+}
+
+.recuerdame a {
+    color: black;
+    text-decoration: none;
+}
+
+.recuerdame a:hover {
+    text-decoration: underline;
+}
+
+.contenedor .btn {
+    width: 100%;
+    height: 45px;
+    background: linear-gradient(lightpink, mediumpurple);
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    transition: 0.3s;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    color: white;
 }
 
-/* Hover */
-button:hover {
-    background: #5a4bd1;
-    transform: translateY(-2px);
+.contenedor .registrate-link {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
 }
 
-/* Click */
-button:active {
-    transform: scale(0.98);
+.registrate-link p {
+    color: black;
 }
 
-/* Espaciado entre bloques */
-.grupo-doble {
-    margin-top: 15px;
+.registrate-link p a {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.registrate-link p a:hover {
+    text-decoration: underline;
 }
