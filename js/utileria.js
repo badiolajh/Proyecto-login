@@ -56,7 +56,7 @@ function validarPassword() {
     //Valida que tenga los caracteres admitidos
   } else if (!regex.test(Vpass)) {
     error.textContent =
-      "El password solo acepta Mayusculas, Minusculas, numero o algun caracter especial.";
+      "El password debe contener Mayusculas, Minusculas, numero y algun caracter especial.";
     return false;
   }
   error.textContent = "";
@@ -90,4 +90,3 @@ function Calc() {
     window.location.href = "inicio.html";
   }, 1300);
 }
-

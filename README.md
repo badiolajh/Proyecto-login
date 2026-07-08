@@ -3,7 +3,6 @@
                 instituto tecnologico de oaxaca
                 Ing. en sistemas computacionales
                 
-
                 equipo:
                 Badiola Barrita Jonathan
                 Flores Santiago Wilver Alfredo
