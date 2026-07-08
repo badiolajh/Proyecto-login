@@ -178,8 +178,27 @@ Se agregó un desplegable del usuario, se mostraran capturas e informes.
 ![Sidebar](img/Capturas/desplegable-hacia-abajo-usuarios.png)
 
 ---
+---
 
-# 5. Modal de información del perfil
+# 5. Captura de usuarios
+
+En el desplagable de usuarios se puede capturar mediante un formulario a los usuarios
+
+
+![Formulario](img/Capturas/formulario-captura-de-usuarios.png)
+
+---
+
+# 6. Modal que valida edadmod
+
+Se agregó un desplegable del usuario, se mostraran capturas e informes.
+
+
+![Modal](img/Capturas/Modal-valida-informacion.png)
+
+---
+
+# 7. Modal de información del perfil
 
 Se implementó un modal para mostrar información adicional del usuario.
 
