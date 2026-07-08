@@ -69,6 +69,12 @@ function Calc() {
   if (!ValidarCorreo()) return;
   if (!validarPassword()) return;
 
+  // Guardar nombre y correo en localStorage
+  let nombreUsuario = document.forms["loginForm"]["fnombre"].value;
+  let correoUsuario = document.forms["loginForm"]["femail"].value;
+  localStorage.setItem("nombreUsuario", nombreUsuario);
+  localStorage.setItem("correoUsuario", correoUsuario);
+
   Swal.mixin({
     toast: true,
     position: "top-end",
@@ -84,3 +90,4 @@ function Calc() {
     window.location.href = "inicio.html";
   }, 1300);
 }
+

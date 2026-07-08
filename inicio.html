@@ -132,23 +132,59 @@
         <section id="inicio">
             <h2>Seccion de Inicio</h2>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita totam nemo rerum rem similique
-                deserunt saepe quos autem ullam maxime tempora id magnam, qui aut ad praesentium possimus! Rem, animi.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita totam nemo rerum rem similique
-                deserunt saepe quos autem ullam maxime tempora id magnam, qui aut ad praesentium possimus! Rem, animi.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita totam nemo rerum rem similique
-                deserunt saepe quos autem ullam maxime tempora id magnam, qui aut ad praesentium possimus! Rem, animi.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore accusantium consequatur hic aperiam
+                consequuntur distinctio culpa expedita similique vel eligendi, repellendus facilis eos incidunt, quas
+                labore odio autem corporis minus.
             </p>
         </section>
-        <br>
+
         <section id="usuarios">
             <h2>Sección de Usuarios</h2>
 
-            <div id="usuarios-captura">
-                <h3>Captura de usuario</h3>
-                <!-- Aquí irá el formulario -->
-                <p>Formulario simulado para capturar un nuevo usuario.</p>
+            <div class="contenedor" id="usuarios-captura">
+                <h1>Captura de Usuario</h1>
+                <form id="formUsuario" name="loginForm">
+                    <!-- Nombre -->
+                    <div class="input-box">
+                        <input type="text" name="fnombre" placeholder="Nombre completo" required />
+                        <i class="icono fa-solid fa-user"></i>
+                    </div>
+                    <p id="errorName" class="errorName"></p>
+
+                    <!-- Correo -->
+                    <div class="input-box">
+                        <input type="email" name="femail" placeholder="Correo electrónico" required />
+                        <i class="icono fa-solid fa-at"></i>
+                    </div>
+                    <p id="errorEmail" class="errorEmail"></p>
+
+                    <!-- Contraseña -->
+                    <div class="input-box">
+                        <input type="password" name="fpassword" placeholder="Contraseña" required />
+                        <i class="icono fa-solid fa-lock"></i>
+                    </div>
+                    <p id="errorPass" class="errorPass"></p>
+
+                    <!-- Número de control -->
+                    <div class="input-box">
+                        <input type="text" name="fcontrol" placeholder="Número de control (6 dígitos)" required
+                            maxlength="6" />
+                        <i class="icono fa-solid fa-id-card"></i>
+                    </div>
+                    <p id="errorControl" class="errorControl"></p>
+
+                    <!-- Fecha de nacimiento -->
+                    <div class="input-box">
+                        <input type="date" name="fnacimiento" required />
+                        <i class="icono fa-solid fa-calendar"></i>
+                    </div>
+
+                    <!-- Botón -->
+                    <button type="submit" class="btn">Guardar Usuario</button>
+                </form>
             </div>
+
+
 
             <div id="usuarios-listado" style="display:none;">
                 <h3>Listado de usuarios</h3>
@@ -156,55 +192,57 @@
             </div>
         </section>
 
-        <br>
         <section id="productos">
             <h2>Seccion de Productos</h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore accusantium consequatur hic aperiam
                 consequuntur distinctio culpa expedita similique vel eligendi, repellendus facilis eos incidunt, quas
                 labore odio autem corporis minus.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore accusantium consequatur hic aperiam
-                consequuntur distinctio culpa expedita similique vel eligendi, repellendus facilis eos incidunt, quas
-                labore odio autem corporis minus.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore accusantium consequatur hic aperiam
-                consequuntur distinctio culpa expedita similique vel eligendi, repellendus facilis eos incidunt, quas
-                labore odio autem corporis minus.
             </p>
         </section>
-        <br>
+
         <section id="informes">
             <h2>Seccion de Informes</h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore accusantium consequatur hic aperiam
                 consequuntur distinctio culpa expedita similique vel eligendi, repellendus facilis eos incidunt, quas
                 labore odio autem corporis minus.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore accusantium consequatur hic aperiam
-                consequuntur distinctio culpa expedita similique vel eligendi, repellendus facilis eos incidunt, quas
-                labore odio autem corporis minus.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore accusantium consequatur hic aperiam
-                consequuntur distinctio culpa expedita similique vel eligendi, repellendus facilis eos incidunt, quas
-                labore odio autem corporis minus.
             </p>
         </section>
-        <br>
+
         <section id="configuracion">
             <h2>Seccion de Configuración</h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore accusantium consequatur hic aperiam
                 consequuntur distinctio culpa expedita similique vel eligendi, repellendus facilis eos incidunt, quas
                 labore odio autem corporis minus.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore accusantium consequatur hic aperiam
-                consequuntur distinctio culpa expedita similique vel eligendi, repellendus facilis eos incidunt, quas
-                labore odio autem corporis minus.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore accusantium consequatur hic aperiam
-                consequuntur distinctio culpa expedita similique vel eligendi, repellendus facilis eos incidunt, quas
-                labore odio autem corporis minus.
             </p>
         </section>
+
+        <!-- Modal de Edad -->
+        <div class="modal fade" id="modalEdad" tabindex="-1" aria-labelledby="modalEdadLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalEdadLabel">Validación de Edad</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body" id="mensajeEdad">
+                        <!-- Aquí se mostrará el mensaje dinámico -->
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </main>
     <!-- Bootstrap JS  -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/utileria.js"></script>
     <script src="js/inicio.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
