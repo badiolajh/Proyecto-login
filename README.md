@@ -198,7 +198,42 @@ Se agregó un desplegable del usuario, se mostraran capturas e informes.
 
 ---
 
-# 7. Modal de información del perfil
+# 7. Seccion de listado
+
+aqui se mostrarà el listado de los usuarios
+
+![Listado](img/Capturas/slider-listado-Usuarios.png)
+
+---
+
+# 8. Seccion Productos
+
+aqui se mostrarà el listado de los podructos
+
+
+![productos](img/Capturas/SLIDER-PRODUCTOS.png)
+
+---
+
+# 9. Seccion informes
+
+aqui se mostrarà el listado de los informes
+
+
+![Informes](img/Capturas/slider-informes.png)
+
+---
+
+# 10. Seccion Configuraciòn
+
+aqui se mostrarà la confiuracion que se podrà realizar en el sistema
+
+
+![Configuracion](img/Capturas/seccion-configuracion.png)
+
+---
+
+# 11. Modal de información del perfil
 
 Se implementó un modal para mostrar información adicional del usuario.
 

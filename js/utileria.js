@@ -56,7 +56,7 @@ function validarPassword() {
     //Valida que tenga los caracteres admitidos
   } else if (!regex.test(Vpass)) {
     error.textContent =
-      "El password debe contener Mayusculas, Minusculas, numero y algun caracter especial.";
+      "El password debe contener mayusculas, minusculas, algun numero y algun caracter especial.";
     return false;
   }
   error.textContent = "";
