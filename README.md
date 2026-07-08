@@ -3,11 +3,10 @@
                 instituto tecnologico de oaxaca
                 Ing. en sistemas computacionales
                 
-                nombre: Badiola Barrita Jonathan
-                nombre: Flores Santiago Wilver Alfredo
 
                 equipo:
                 Badiola Barrita Jonathan
+                Flores Santiago Wilver Alfredo
                 
                 grupo: 7SB
                 
