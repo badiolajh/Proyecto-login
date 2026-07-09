@@ -1,0 +1,5 @@
+/img/*
+!/img/Capturas
+!/img/Capturas/**
+!/img/icons
+!/img/icons/**
